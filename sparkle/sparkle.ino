@@ -1,3 +1,5 @@
+/** Because sparkles.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6

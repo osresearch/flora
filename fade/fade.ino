@@ -1,3 +1,7 @@
+/** Fade all the pixels.
+ *
+ * 
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
@@ -43,5 +47,4 @@ void loop() {
 
 	pixels.show();
 	delay(50);
-
 }

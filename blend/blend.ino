@@ -1,3 +1,7 @@
+/** Run a few sprites around the ring and pulse all of them.
+ *
+ * This is an example of how blending can work with color.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
@@ -46,6 +50,7 @@ blend_pixel(
 
 	pixels.setPixelColor(n, limit(r), limit(g), limit(b));
 }
+
 
 void loop() {
 	// fade all the pixels pretty fast

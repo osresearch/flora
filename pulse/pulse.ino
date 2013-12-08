@@ -1,3 +1,5 @@
+/** Ramp up all the pixel intensities.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6

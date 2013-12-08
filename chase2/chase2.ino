@@ -1,3 +1,8 @@
+/** Chase a pixel around, with a hand-written decay trail.
+ *
+ * This example shows how to do a decay trail with a hand-computed
+ * set of pixels that are turned on with decreasing brightness.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
@@ -29,10 +34,10 @@ void loop() {
 	pixels.setPixelColor((position+5) % NUM_PIXELS, 0, 4, 0);
 	pixels.setPixelColor((position+6) % NUM_PIXELS, 0, 2, 0);
 
-	pixels.show();
-	delay(50);
-
 	// go in the opposite direction; note that modular arithmetic
 	// does not work right with negative numbers, so add in the modulus
 	position = (position + NUM_PIXELS - 1) % NUM_PIXELS;
+
+	pixels.show();
+	delay(50);
 }

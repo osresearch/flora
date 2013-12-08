@@ -1,3 +1,8 @@
+/** Chase a single pixel around the ring.
+ *
+ * This example shows how pixels can be changed multiple times
+ * between calls to pixels.show();
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6

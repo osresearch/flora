@@ -1,3 +1,5 @@
+/** Ramp all the pixels up and then back down.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
