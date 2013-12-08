@@ -1,3 +1,16 @@
+/** "Larson scanner" animation for Holly's jacket.
+ *
+ * Turns the seven LEDs on in a back-and-forth scan pattern
+ * with a decaying fade as the scan passes by.
+ *
+ * Uses the pixels.getPixelColor() to retrieve the current color,
+ * and then does bit-manipulation to decay by a factor of 7/8th
+ * each time.
+ *
+ * The speed of the scan is limited to keep it visible.
+ * But we want to update the decaying values more frequently,
+ * so a skip variable is used.
+ */
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
