@@ -16,17 +16,16 @@ void setup() {
 }
 
 void loop() {
-	// turn them all off
+	// turn off all pixels
 	for(int i = 0 ; i < NUM_PIXELS ; i++)
 		pixels.setPixelColor(i, 0, 0, 0);
 
-	// and now turn on the one at position and the next few
-	pixels.setPixelColor(position, 0, 128, 0);
-
-	pixels.show();
-	delay(20);
+	// and now turn on just the one at the current position
+	pixels.setPixelColor(position, 128, 128, 0);
 
 	// increment the position, wrapping at the number of pixels
-	//position = (position + 1) % NUM_PIXELS;
-	position = (position + NUM_PIXELS - 1) % NUM_PIXELS;
+	position = (position + 1) % NUM_PIXELS;
+
+	pixels.show();
+	delay(50);
 }
