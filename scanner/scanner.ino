@@ -48,6 +48,9 @@ void loop() {
 	// and now turn on just the one at position
 	pixels.setPixelColor(position, 255, 0, 0);
 
+	if (random(50) == 0)
+		pixels.setPixelColor(random(NUM_PIXELS), 255, 255, 255);
+
 	if (skip++ % 8 == 0)
 	{
 		position = (position + NUM_PIXELS + direction) % NUM_PIXELS;
