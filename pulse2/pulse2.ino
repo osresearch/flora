@@ -29,12 +29,11 @@ void loop() {
 	pixels.show();
 	delay(10);
 
-	if (direction == 1)
-	{
-		if (++brightness == 200)
-			direction = -1;
-	} else {
-		if (--brightness == 0)
-			direction = +1;
-	}
+	brightness = brightness + direction; // +=
+
+	if (brightness == 200)
+		direction = -1;
+	else
+	if (brightness == 0)
+		direction = +1;
 }
