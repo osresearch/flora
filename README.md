@@ -12,6 +12,7 @@ Examples
 =====
 The order of the examples to review is:
 
+* [Blink test](https://raw.github.com/osresearch/flora/master/test/test.ino)
 * [rgb](https://raw.github.com/osresearch/flora/master/rgb/rgb.ino): flash the first pixel through red, green and blue
 * [all](https://raw.github.com/osresearch/flora/master/all/all.ino): flash all the pixels
 * [pulse](https://raw.github.com/osresearch/flora/master/pulse/pulse.ino): ramp the intensity up
