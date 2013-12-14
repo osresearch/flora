@@ -7,6 +7,7 @@ These are examples of driving the NeoPixel ring with an Adafruit FLORA.
 * First be sure to have installed the [Adafruit Flora Arduino version](http://learn.adafruit.com/getting-started-with-flora/download-software)
 * You might have to install [FTDI (USB Serial) drivers](http://www.ftdichip.com/Drivers/VCP.htm)
 * Mavericks?  [Java updates might be required](http://support.apple.com/kb/dl1572)
+* [Keynote presentation](http://trmm.net/presentations/flora-class.key) (80 MB)
 
 Examples
 =====
@@ -31,4 +32,5 @@ Further links
 * [Colour Lovers](http://colourlovers.com)
 * [Arduino libraries](http://arduino.cc)
 * [Neopixel guide](http://learn.adafruit.com/adafruit-neopixel-uberguide)
+* [Ultra-flex wire](http://www.mcmaster.com/#9511t511/=pt452u)
 
