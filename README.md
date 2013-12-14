@@ -27,6 +27,7 @@ Further links
 ====
 ![Gemma hoop earings ](http://learn.adafruit.com/system/assets/assets/000/010/991/small360/flora_Risa_Rose_Gemma_Hoop_Earrings_Adafruit.jpg?1379376776)
 * [Adafruit Flora Tutorials](http://learn.adafruit.com/category/flora)
+* [Colour Lovers](http://colourlovers.com)
 * [Arduino libraries](http://arduino.cc)
 * [Neopixel guide](http://learn.adafruit.com/adafruit-neopixel-uberguide)
 
