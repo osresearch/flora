@@ -3,9 +3,15 @@ FLORA and NeoPixel examples
 ![FLORA and NeoPixel ring](http://farm3.staticflickr.com/2854/11277698765_913be823ee_z.jpg)
 
 These are examples of driving the NeoPixel ring with an Adafruit FLORA.
-The order to review them is:
 
-* rgb: flash the first pixel through red, green and blue
+# First be sure to have installed the [Adafruit Flora Arduino version](http://learn.adafruit.com/getting-started-with-flora/download-software)
+# You might have to install [FTDI (USB Serial) drivers](http://www.ftdichip.com/Drivers/VCP.htm)
+# Mavericks?  [Java updates might be required](http://support.apple.com/kb/dl1572)
+
+
+The order of the examples to review them is:
+
+* [rgb](rgb/rgb.ino): flash the first pixel through red, green and blue
 * all: flash all the pixels
 * pulse: ramp the intensity up
 * pulse2: ramp the intensity up and down
