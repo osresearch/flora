@@ -8,18 +8,25 @@ These are examples of driving the NeoPixel ring with an Adafruit FLORA.
 * You might have to install [FTDI (USB Serial) drivers](http://www.ftdichip.com/Drivers/VCP.htm)
 * Mavericks?  [Java updates might be required](http://support.apple.com/kb/dl1572)
 
-
-The order of the examples to review them is:
+Examples
+=====
+The order of the examples to review is:
 
 * [rgb](https://raw.github.com/osresearch/flora/master/rgb/rgb.ino): flash the first pixel through red, green and blue
-* all: flash all the pixels
-* pulse: ramp the intensity up
-* pulse2: ramp the intensity up and down
-* chase: chase a single pixel around
-* chase2: chase a pixel around with hand written trails
-* fade: chase a pixel around with a frame-buffer based decay
-* scanner: Like Knight Rider
-* blend: Multiple sprites and color blending
-* sparkle: Because it sparkles
+* [all](https://raw.github.com/osresearch/flora/master/all/all.ino): flash all the pixels
+* [pulse](https://raw.github.com/osresearch/flora/master/pulse/pulse.ino): ramp the intensity up
+* [pulse2](https://raw.github.com/osresearch/flora/master/pulse2/pulse2.ino): ramp the intensity up and down
+* [chase](https://raw.github.com/osresearch/flora/master/chase/chase.ino): chase a single pixel around
+* [chase2](https://raw.github.com/osresearch/flora/master/chase2/chase2.ino): chase a pixel around with hand written trails
+* [fade](https://raw.github.com/osresearch/flora/master/fade/fade.ino): chase a pixel around with a frame-buffer based decay
+* [scanner](https://raw.github.com/osresearch/flora/master/scanner/scanner.ino): Like Knight Rider
+* [blend](https://raw.github.com/osresearch/flora/master/blend/blend.ino): Multiple sprites and color blending
+* [sparkle](https://raw.github.com/osresearch/flora/master/sparkle/sparkle.ino): Because it sparkles
 
+Further links
+====
+![Gemma hoop earings ](http://learn.adafruit.com/system/assets/assets/000/010/991/medium800/flora_Risa_Rose_Gemma_Hoop_Earrings_Adafruit.jpg)
+* [Adafruit Flora Tutorials](http://learn.adafruit.com/category/flora)
+* [Arduino libraries](http://arduino.cc)
+* [Neopixel guide](http://learn.adafruit.com/adafruit-neopixel-uberguide)
 
