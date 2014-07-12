@@ -14,12 +14,12 @@
 #include <Adafruit_NeoPixel.h>
 
 #define PIN		6
-#define NUM_PIXELS	7
+#define NUM_PIXELS	16
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(
 	NUM_PIXELS,			// how many pixels on strip?
 	PIN,				// output pin?
-	NEO_GRB + NEO_KHZ400		// type of pixels?
+	NEO_GRB + NEO_KHZ800		// type of pixels?
 );
 
 int position = 0;
@@ -51,11 +51,19 @@ void loop() {
 	if (random(50) == 0)
 		pixels.setPixelColor(random(NUM_PIXELS), 255, 255, 255);
 
-	if (skip++ % 8 == 0)
-	{
-		position = (position + NUM_PIXELS + direction) % NUM_PIXELS;
-		if (position == 0 || position == NUM_PIXELS-1)
-			direction = -direction;
+	if (skip++ % 8 == 0){
+
+	//{
+		//position = (position + NUM_PIXELS + direction) % NUM_PIXELS;
+		//if (position == 0 || position == NUM_PIXELS-1)
+			//direction = -direction;
+	//}
+
+		if (position == 0)
+			direction = +1;
+		if (position == NUM_PIXELS-1)
+			direction = -1;
+		position = position + direction;
 	}
 
 	pixels.show();
