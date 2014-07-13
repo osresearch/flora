@@ -104,17 +104,23 @@ hexdigit(
 
 
 int x = 0;
-#define SPEED 2
+#define SPEED 1
 
 void loop() {
-	delay(10);
+	delay(1);
 	uint32_t color = Wheel(color_phase++);
 
-	matrix.fillScreen(color);
+	for (int x = 0 ; x < TILES_X * WIDTH ; x++)
+	{
+		for (int y = 0 ; y < TILES_Y * HEIGHT ; y++)
+		{
+			matrix.drawPixel(x, y, Wheel(x * 16 + y * 32 - color_phase * 16));
+		}
+	}
+
 	matrix.setCursor(x/SPEED,1);
 	matrix.setTextWrap(false);
-	//matrix.setTextColor(Color(128,128,128));
-	matrix.setTextColor(Wheel(color_phase + 512));
+	matrix.setTextColor(Color(128,128,128));
 
 	const int message_len = sizeof(message) - 1;
 
