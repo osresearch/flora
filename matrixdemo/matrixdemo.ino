@@ -31,12 +31,12 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(
 
 
 const uint32_t colors[] = {
-	0x2F0000,
-	0x2F2F00,
-	0x002F00,
-	0x002F4F,
-	0x00002F,
-	0x2F002F,
+	0x4F0000,
+	0x4F4F00,
+	0x004F00,
+	0x004F4F,
+	0x00004F,
+	0x4F004F,
 };
 
 
@@ -113,8 +113,8 @@ void loop() {
 	matrix.fillScreen(color);
 	matrix.setCursor(x/SPEED,1);
 	matrix.setTextWrap(false);
-	matrix.setTextColor(Color(128,128,128));
-	//matrix.setTextColor(color);
+	//matrix.setTextColor(Color(128,128,128));
+	matrix.setTextColor(Wheel(color_phase + 512));
 
 	const int message_len = sizeof(message) - 1;
 
