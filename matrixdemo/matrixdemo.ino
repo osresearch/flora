@@ -11,6 +11,8 @@
 #define PIN		6
 #define WIDTH		16
 #define HEIGHT		8
+#define TILES_X		2
+#define TILES_Y		1
 
 
 const char message[] = "Welcome to NYCResistor!";
@@ -19,6 +21,8 @@ const char message[] = "Welcome to NYCResistor!";
 Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(
 	WIDTH,
 	HEIGHT,
+	TILES_X,
+	TILES_Y,
 	PIN,
 	NEO_MATRIX_TOP + NEO_MATRIX_LEFT +
 	NEO_MATRIX_ROWS + NEO_MATRIX_ZIGZAG,
@@ -118,7 +122,7 @@ void loop() {
 		matrix.write(message[i]);
 
 	if (x < -message_len * 6 * SPEED)
-		x = WIDTH * SPEED;
+		x = TILES_X * WIDTH * SPEED;
 	else
 		x--;
 	
