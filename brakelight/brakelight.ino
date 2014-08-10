@@ -7,6 +7,8 @@
 #define NUM_PIXELS 24
 #define PIN 6
 
+#define BUTTON 0
+
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = pin number (most are valid)
 // Parameter 3 = pixel type flags, add together as needed:
@@ -16,7 +18,9 @@
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
-void setup() {
+void setup()
+{
+  pinMode(BUTTON, INPUT_PULLUP);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
@@ -221,6 +225,8 @@ static function_t patterns[] = {
 
 static const unsigned num_patterns = sizeof(patterns)/sizeof(*patterns);
 
+static uint8_t brightness = 255;
+static uint8_t last_read;
 
 void
 loop()
@@ -231,6 +237,21 @@ loop()
 		//function_t pattern = patterns[i];
 	
 		for (int len = 0 ; len < 2048 ; len++)
+		{
+			if (digitalRead(BUTTON) == 0)
+			{
+				if (last_read == 0)
+				{
+					last_read = 1;
+					//brightness = (brightness + 64) % 256;
+					//strip.setBrightness(brightness);
+					break;
+				}
+			} else {
+				last_read = 0;
+			}
+
 			pattern();
+		}
 	}
 }
